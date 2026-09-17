@@ -14,7 +14,7 @@ namespace VendingMachine
         private int _stock;
         private ProductCategory _category;
 
-        public bool IsAvailable;
+
 
         public string Code { get { return _code; } }
         public string Name { get { return _name; } }
@@ -22,8 +22,10 @@ namespace VendingMachine
         public int Stock { get { return _stock; } }
         public ProductCategory Category { get { return _category; } }
 
-
-        public Product(string Code, string Name,int Price, int Stock, ProductCategory Category)
+       
+            
+       
+        public Product(string Code, string Name, int Price, int Stock, ProductCategory Category)
         {
             _code = Code;
             _name = Name;
@@ -33,10 +35,10 @@ namespace VendingMachine
         }
 
         public void Sell()
-        { 
-            _stock -=1;
+        {
+            _stock -= 1;
         }
-        
+
     }
 }
 
