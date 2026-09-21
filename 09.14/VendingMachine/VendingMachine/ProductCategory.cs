@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    public class ProductCategory
+    public enum ProductCategory
     {
-        public string Drink {  get; set; }
-        public string Snack { get; set; }
-        public string Food { get; set; }
+        Drink, Snack, Food
     }
 }
