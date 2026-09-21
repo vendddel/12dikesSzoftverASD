@@ -14,6 +14,18 @@ namespace VendingMachine
         private int _stock;
         private ProductCategory _category;
 
+        public bool IsAvailable
+        {
+            get
+            {
+                if (Stock > 1)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
 
 
         public string Code { get { return _code; } }
